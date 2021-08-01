@@ -6,33 +6,78 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
+<section class="generate">
+    <div class="container grid">
+        <div class="generate-1">
 
-<input type="range" id="r1" value="0" max="50">
-<input type="range" id="offsetX">
-<input type="range" id="offsetY">
-<input type="range" id="blur">
-<input type="range" id="spread">
-<input type="color" id="color">
-<input type="color" id="colorBox">
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <h3 class="skills__name r1">Бордер:</h3>
+                    <span class="text1"></span>
+                    <input class="generate-color" type="range" id="r1" value="0" max="50" style="width: 300px;">
+                </div>
+            </div>
 
-<div class="box"> </div>
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <h3 class="skills__name offsetX">Горизонтальное смещение:</h3>
+                    <input class="generate-color" type="range" id="offsetX" style="width: 300px;">
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <h3 class="skills__name offsetY">Вертикальное смещение:</h3>
+                </div>
+                <input class="generate-color"  type="range" id="offsetY" style="width: 300px;" >
+            </div>
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <h3 class="skills__name blur">Размытие:</h3>
+                </div>
+                <input class="generate-color" type="range" id="blur" style="width: 300px;">
+            </div>
+            <div class="skills__data">
+                <div class="skills__titles">
+                    <h3 class="skills__name spread">Растяжение:</h3>
+                </div>
+                <input class="generate-color" type="range" id="spread" style="width: 300px;">
+            </div>
+            <div class="sub-box">
+                <div class="generate-color">
+                    <label for="color">Shadow color:</label>
+                    <input type="color" id="color" class="border">
+                </div>
+                <div class="generate-color">
+                    <label for="colorBox">Color box:</label>
+                    <input type="color" id="colorBox" class="border">
+                </div>
+                <div class="generate-color">
+                    <label for="background" class="back-title">Background color:</label>
+                    <input type="color" id="background" class="background border" >
+                </div>
+            </div>
+        </div>
 
-<div class="out"> </div>
+        <div class="sub-2">
 
-<input type="radio" id="inset" name="shadow"  checked>
-<input type="radio" id="outset" name="shadow" >
+            <div class="sub-1">
+                <div class="box-shadow">
+                    <div class="box"></div>
 
+                    <div class="out"></div>
 
+                    <input type="radio" id="inset" name="shadow" checked>
+                    <input type="radio" id="outset" name="shadow">
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
+    </div>
+</section>
 
 
 <script src="./script.js"></script>

@@ -9,8 +9,7 @@ const box = document.querySelector('.box')
 const out = document.querySelector('.out')
 const inset = document.querySelector('#inset')
 const outset = document.querySelector('#outset')
-let result = document.querySelector('#result' )
-
+const result = document.querySelector('#result' )
 
 
 //r1.onchange = generateBoxShadow
@@ -23,32 +22,35 @@ color.oninput = generateBoxShadow
 colorBox.oninput = colorBoxResult
 inset.oninput = generateBoxShadow
 outset.oninput = generateBoxShadow
-
+box.oninput = colorBoxResult
 
 
 function generateBoxShadow() {
     box.style.borderRadius = r1.value + '%'
-    box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} inset `
+    box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} inset`
     out.innerHTML = `box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} </br>`
     out.innerHTML += `-webkit-box-shadow ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} </br>`
-    out.innerHTML = `-moz-box-shadow ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}`
+    out.innerHTML += `-moz-box-shadow ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}`
 
     if (inset.checked) {
-
+return box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} inset`
     }
+return box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} `
 }
+
 
 //Создали функцию для color box
 function colorBoxResult () {
     box.style.backgroundColor = colorBoxResult.value
+    console.log(12345)
+
 }
 
+/*    background.style.backgroundColor =  "#6456bd".value */
 
 
 
 
-
-//innerHtml , br
 
 
 
