@@ -42,8 +42,8 @@ function generateBoxShadow() {
     box.style.backgroundColor = colorBox.value
     box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value} inset`
     out.innerHTML = `box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value};</br>`
-    out.innerHTML += `-webkit-box-shadow ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}</br>`
-    out.innerHTML += `-moz-box-shadow ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}`
+    out.innerHTML += `-webkit-box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}</br>`
+    out.innerHTML += `-moz-box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px ${spread.value}px ${color.value}`
     valueP.innerHTML = r1.value + '%'
     valuePx1.innerHTML = `${offsetX.value}px`
     valuePx2.innerHTML = `${offsetY.value}px`
