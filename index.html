@@ -17,47 +17,51 @@
             <div class="skills__data">
                 <div class="skills__titles">
                     <h3 class="skills__name r1">Бордер:</h3>
-                    <span class="text1"></span>
-                    <input class="generate-color" type="range" id="r1" value="0" max="50" style="width: 300px;">
+                    <div class="valueP">0%</div>
+                    <input class="generate-color" type="range" id="r1" value="0" style="width: 300px;">
                 </div>
             </div>
 
             <div class="skills__data">
                 <div class="skills__titles">
                     <h3 class="skills__name offsetX">Horizontal Shadow Length:</h3>
-                    <input class="generate-color" type="range" id="offsetX" style="width: 300px;">
+                    <div class="valuePx1">0px</div>
+                    <input class="generate-color" type="range" id="offsetX" max="50" min="-50" style="width: 300px;">
                 </div>
             </div>
             <div class="skills__data">
                 <div class="skills__titles">
                     <h3 class="skills__name offsetY">Vertical Shadow Length:</h3>
+                    <div class="valuePx2">0px</div>
                 </div>
-                <input class="generate-color"  type="range" id="offsetY" style="width: 300px;" >
+                <input class="generate-color"  type="range" id="offsetY" max="50" min="-50" style="width: 300px;" >
             </div>
             <div class="skills__data">
                 <div class="skills__titles">
                     <h3 class="skills__name blur">Blur Radius:</h3>
+                    <div class="valuePx3">0px</div>
                 </div>
-                <input class="generate-color" type="range" id="blur" style="width: 300px;">
+                <input class="generate-color" type="range" id="blur" value="0" style="width: 300px;">
             </div>
             <div class="skills__data">
                 <div class="skills__titles">
                     <h3 class="skills__name spread">Spread Radius:</h3>
+                    <div class="valuePx4">0px</div>
                 </div>
-                <input class="generate-color" type="range" id="spread" style="width: 300px;">
+                <input class="generate-color" type="range" id="spread" max="50" min="-50" style="width: 300px;">
             </div>
             <div class="sub-box">
                 <div class="generate-color">
-                    <label for="color">Shadow color:</label>
-                    <input type="color" id="color" class="border" >
+                    <label for="color" class=" font-size">Shadow color:</label>
+                    <input type="color" id="color" class="border" value='#d982cd' >
                 </div>
                 <div class="generate-color">
-                    <label for="colorBox">Color box:</label>
-                    <input type="color" id="colorBox" class="border" >
+                    <label for="colorBox" class=" font-size">Color box:</label>
+                    <input type="color" id="colorBox" class="border" value="#7131d7">
                 </div>
                 <div class="generate-color">
-                    <label for="background" class="back-title">Background color:</label>
-                    <input type="color" id="background" class="background border"  >
+                    <label for="background" class="back-title font-size">Background color:</label>
+                    <input type="color" id="background" class="background border"  value="#698dac" >
                 </div>
             </div>
         </div>
@@ -69,9 +73,10 @@
                     <div class="box"></div>
 
                     <div class="out"></div>
-
-                    <input type="radio" id="inset" name="shadow" checked>
-                    <input type="radio" id="outset" name="shadow">
+                    <label for="inset">Inset:</label>
+                    <input type="radio" id="inset" name="shadow">
+                    <label for="Outset">Outset:</label>
+                    <input type="radio" id="outset" name="shadow" checked>
                 </div>
             </div>
         </div>
