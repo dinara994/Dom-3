@@ -42,7 +42,6 @@ function colorBoxResult () {
 
 }
 
-/*    background.style.backgroundColor =  "#6456bd".value */
 
 
 
