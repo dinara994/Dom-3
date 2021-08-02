@@ -4,12 +4,11 @@ const offsetY = document.querySelector('#offsetY')
 const blur = document.querySelector('#blur')
 const spread = document.querySelector('#spread')
 const  color = document.querySelector('#color')
-const  colorBox = document.querySelector('#colorBox')
 const box = document.querySelector('.box')
 const out = document.querySelector('.out')
 const inset = document.querySelector('#inset')
 const outset = document.querySelector('#outset')
-const result = document.querySelector('#result' )
+
 
 
 //r1.onchange = generateBoxShadow
@@ -19,10 +18,8 @@ offsetY.oninput = generateBoxShadow
 blur.oninput = generateBoxShadow
 spread.oninput = generateBoxShadow
 color.oninput = generateBoxShadow
-colorBox.oninput = colorBoxResult
 inset.oninput = generateBoxShadow
 outset.oninput = generateBoxShadow
-box.oninput = colorBoxResult
 
 
 function generateBoxShadow() {
@@ -42,7 +39,6 @@ return box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value
 //Создали функцию для color box
 function colorBoxResult () {
     box.style.backgroundColor = colorBoxResult.value
-    console.log(12345)
 
 }
 
